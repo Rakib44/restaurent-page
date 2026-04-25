@@ -164,8 +164,8 @@ To deploy:
 
 ## 🏷️ Credits
 
-**Designed & Developed by [RabyWeb](https://gensytech.com)**
-Digital Agency — Mymensingh, Bangladesh
+**Designed & Developed by [GensyTech](https://gensytech.com)**
+Digital Agency — Bangladesh
 
 ---
 
