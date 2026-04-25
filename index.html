@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chef Time - good food, good mood. Located in Mymensingh.">
+    <meta name="keywords"
+        content="Chef Time, Mymensingh restaurant, good food good mood, Fast food, Chinese, Pizza, Burger">
+    <meta name="author" content="Chef Time">
+    <title>Chef Time - good food, good mood</title>
+    <link rel="icon" type="image/png" href="images/chef-time-logo.png">
+    <link rel="apple-touch-icon" href="images/chef-time-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-left">
+                    <a href="#about" class="nav-link">আমাদের সম্পর্কে</a>
+                    <a href="#gallery" class="nav-link">ফুড গ্যালারি</a>
+                    <a href="#menu" class="nav-link">মেনু দেখুন</a>
+                    <a href="#contact" class="nav-link">যোগাযোগ করুন</a>
+                </div>
+                <div class="logo">
+                    <a href="#" class="logo-link">
+                        <img src="images/chef-time-logo.png" alt="Chef Time Logo" style="height: 75px; width: auto;" />
+                    </a>
+                </div>
+                <div class="nav-right">
+                    <a href="#contact" class="location-selector">
+                        <svg class="icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                                fill="currentColor" />
+                        </svg>
+                        <span>Mymensingh</span>
+                        <svg class="icon dropdown-icon" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                        </svg>
+                    </a>
+                    <button class="order-btn-nav" id="orderBtnNav">
+                        <svg class="icon" viewBox="0 0 24 24" width="18" height="18">
+                            <path
+                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                                fill="currentColor" />
+                        </svg>
+                        অর্ডার দিন
+                    </button>
+                    <div class="mobile-toggle" id="mobileToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about" class="mobile-nav-link">আমাদের সম্পর্কে</a>
+            <a href="#gallery" class="mobile-nav-link">ফুড গ্যালারি</a>
+            <a href="#menu" class="mobile-nav-link">মেনু দেখুন</a>
+            <a href="#contact" class="mobile-nav-link">যোগাযোগ করুন</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content-new">
+                <div class="hero-categories-top">
+                    <span>PIZZA • BURGER • PASTA • SHAWARMA • FRIED CHICKEN</span>
+                </div>
+                <h1 class="hero-title-main">
+                    <span class="text-black">GOOD</span> <span class="text-red">FOOD,</span><br>
+                    <span class="text-black">GOOD</span> <span class="text-red">MOOD</span>
+                </h1>
+                <p class="hero-subtitle-new">
+                    ময়মনসিংহের সেরা রেস্টুরেন্ট — Chef Time-এ একবার আসলেই বুঝবেন পার্থক্য।<br>
+                    311, মাসকান্দা পলিটেকনিক্যাল মোড়, ময়মনসিংহ
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-hero" id="orderBtn">
+                        <svg class="icon" viewBox="0 0 24 24" width="20" height="20" style="margin-right: 8px;">
+                            <path
+                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                                fill="currentColor" />
+                        </svg>
+                        এখনই অর্ডার দিন
+                    </button>
+                    <a href="#menu" class="btn btn-outline btn-hero">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="margin-right: 8px;">
+                            <path
+                                d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z" />
+                        </svg>
+                        পুরো মেনু দেখুন
+                    </a>
+                </div>
+
+                <div class="hero-contact-pills">
+                    <a href="tel:01734940927" class="contact-pill" style="text-decoration:none;"><svg
+                            viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg> 01734 940927</a>
+                    <a href="tel:01725528688" class="contact-pill" style="text-decoration:none;"><svg
+                            viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg> 01725 528688</a>
+                    <a href="tel:01740557803" class="contact-pill" style="text-decoration:none;"><svg
+                            viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg> 01740 557803</a>
+                    <a href="tel:01712129691" class="contact-pill" style="text-decoration:none;"><svg
+                            viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg> 01712 129691</a>
+                </div>
+            </div>
+            <div class="hero-image-new">
+                <div class="hero-food-circle">
+                    <img src="images/chef-time-hero.png" alt="Chef Time Food" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section id="bestsellers" class="bestsellers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-red">সবচেয়ে জনপ্রিয় আইটেম</h2>
+                <h3 class="section-subtitle">আমাদের কাস্টমাররা বারবার যা অর্ডার করেন</h3>
+            </div>
+            <div class="bestseller-grid">
+                <div class="bestseller-item"
+                    onclick="openQuickView('Family Special Combo', 1799, 'images/family_special_combo.webp', 'আমাদের সিগনেচার ফ্যামিলি কম্বো! ১০ ইঞ্চি পিজ্জা, থাই চিকেন, ৪টি বার্গার এবং আরও অনেক কিছু।')">
+                    <div class="bestseller-image">
+                        <div class="badge badge-green">সকলের প্রিয়</div>
+                        <img src="images/family_special_combo.webp" alt="Family Special Combo" />
+                    </div>
+                    <h4>Family Special Combo</h4>
+                    <p>10" Pizza, Thai Chicken, Burgers & More!</p>
+                </div>
+
+                <div class="bestseller-item"
+                    onclick="openQuickView('Mexican Hot Pizza', 650, 'images/mexican_hot_pizza.webp', 'ঝাল ও চিজের নিখুঁত ভারসাম্য। আমাদের সবচেয়ে জনপ্রিয় পিজ্জাগুলোর একটি।')">
+                    <div class="bestseller-image">
+                        <div class="badge badge-gold">বেস্ট সেলিং</div>
+                        <img src="images/mexican_hot_pizza.webp" alt="Mexican Hot Pizza" />
+                    </div>
+                    <h4>Mexican Hot Pizza</h4>
+                    <p>The perfect balance of cheese and mexican spices.</p>
+                </div>
+
+                <div class="bestseller-item"
+                    onclick="openQuickView('Chicken Grill Burger', 190, 'images/chicken_grill_burger.jpg', 'স্পেশাল হাউজ সস এবং গ্রিলড চিকেন প্যাটি দিয়ে তৈরি আমাদের সিগনেচার বার্গার।')">
+                    <div class="bestseller-image">
+                        <div class="badge badge-red">হট<br>ফেভারিট</div>
+                        <img src="images/chicken_grill_burger.jpg" alt="Chicken Grill Burger" />
+                    </div>
+                    <h4>Chicken Grill Burger</h4>
+                    <p>Grilled chicken patty with our special house sauce.</p>
+                </div>
+            </div>
+            <div class="center-cta">
+                <button class="btn btn-primary btn-hero" id="startOrderBtn">
+                    <svg class="icon" viewBox="0 0 24 24" width="20" height="20">
+                        <path
+                            d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                            fill="currentColor" />
+                    </svg>
+                    এখনই অর্ডার করুন
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending & Recently Ordered Section -->
+    <section id="trending" class="trending">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-red">ট্রেন্ডিং খাবার</h2>
+                <h3 class="section-subtitle">এই মাসে যেসব খাবার সবচেয়ে বেশি অর্ডার হচ্ছে</h3>
+            </div>
+            <div class="trending-grid">
+                <div class="trending-item">
+                    <div class="trending-badge"><svg viewBox="0 0 24 24" width="20" height="20" class="badge-icon-svg"
+                            fill="currentColor">
+                            <path
+                                d="M13.5 0.67s.84 1.99.84 4.33c0 2.84-1.83 4.6-4.33 4.6-2.16 0-3.74-1.49-3.74-3.74 0-2.73 2.25-5.19 6.23-5.19zm.59 15.35c-1.27-1.27-2.07-3.35-2.07-5.35 0-.58.04-1.13.12-1.66.97.28 1.88.96 2.47 1.55.81.81 1.31 1.95 1.31 3.2 0 1.07-.28 2.06-.83 2.93z" />
+                        </svg> জনপ্রিয়</div>
+                    <img src="images/thai_fried_chicken.webp" alt="থাই ফ্রাইড চিকেন" />
+                    <h4>Thai Fried Chicken</h4>
+                    <p class="trending-price">320 tk</p>
+                    <div class="trending-stats">
+                        <span>★ 4.8 (215 Reviews)</span>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-badge"><svg viewBox="0 0 24 24" width="20" height="20" class="badge-icon-svg"
+                            fill="currentColor">
+                            <path
+                                d="M12 2c5.33 4.55 8 8.48 8 11.8 0 4.98-3.8 8.2-8 8.2s-8-3.22-8-8.2C4 10.48 6.67 6.55 12 2m0 15c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" />
+                        </svg> বেস্ট সেলার</div>
+                    <img src="images/grilled_mixed_platter.webp" alt="স্পেশাল গ্রিলড মিক্সড প্ল্যাটার" />
+                    <h4>Fried Special Combo</h4>
+                    <p class="trending-price">250 tk</p>
+                    <div class="trending-stats">
+                        <span>★ 4.9 (189 Reviews)</span>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-badge"><svg viewBox="0 0 24 24" width="20" height="20" class="badge-icon-svg"
+                            fill="currentColor">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2l-2.81 6.63L2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                        </svg> নতুন</div>
+                    <img src="images/chicken_fried_rice.webp" alt="Chicken Fried Rice" />
+                    <h4>Chicken Fried Rice</h4>
+                    <p class="trending-price">220 tk</p>
+                    <div class="trending-stats">
+                        <span>★ 4.7 (152 Reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <img src="images/chef-time-logo.png" alt="Chef Time Logo" class="about-logo">
+                <h2 class="section-title-black">Chef Time - good food, good mood</h2>
+                <p>শেফ টাইম ময়মনসিংহের সেরা স্বাদ আপনার কাছে পৌঁছে দিতে প্রতিশ্রুতিবদ্ধ। ৩১১, মাসকান্দা, পলিটেকনিক্যাল
+                    মোড়ে অবস্থিত আমাদের রেস্টুরেন্টে রয়েছে স্পেশাল পিজ্জা ও বার্গার থেকে শুরু করে অথেনটিক ফ্রাইড রাইস
+                    এবং চাউমিনের মতো অসংখ্য মজাদার খাবারের আয়োজন। আপনি যদি দ্রুত কিছু অর্ডার করতে চান বা পরিবারের সাথে
+                    ডিনার
+                    করতে চান, শেফ টাইম আপনার জন্য একটি উপযুক্ত গন্তব্য।</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-red">আমাদের ফুড গ্যালারি</h2>
+                <h3 class="section-subtitle">সাম্প্রতিক আইটেমগুলো</h3>
+            </div>
+            <div class="gallery-grid-new">
+                <div class="gallery-card">
+                    <img src="images/biryani-trio.webp" alt="স্পেশাল বিরিয়ানি" />
+                    <p>Special Biryani</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/crispy_chicken.webp" alt="ক্রিসপি চিকেন" />
+                    <p>Crispy Chicken</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/mexican_hot_pizza.webp" alt="Mexican Hot Pizza" />
+                    <p>Mexican Hot Pizza</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/chicken_grill_burger.jpg" alt="চিকেন গ্রিল বার্গার" />
+                    <p>Chicken Grill Burger</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/shakes_juices.webp" alt="শেক ও জুস" />
+                    <p>Shakes & Juices</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/chicken_fried_rice.webp" alt="চিকেন ফ্রাইড রাইস" />
+                    <p>Chicken Fried Rice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Menu Section -->
+    <section id="menu" class="full-menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-red">কম্পলিট মেনু</h2>
+                <h3 class="section-subtitle">সব খাবার একসাথে</h3>
+            </div>
+
+
+            <!-- Menu Category Filter -->
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="setmenu">Set Menu</button>
+                <button class="filter-btn" data-filter="pizza">Pizza & Shawarma</button>
+                <button class="filter-btn" data-filter="burger">Burger</button>
+                <button class="filter-btn" data-filter="fried">Fried Items</button>
+                <button class="filter-btn" data-filter="pasta">Pasta & Chawmin</button>
+                <button class="filter-btn" data-filter="combos">Combos & Specials</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-grid-full">
+                <!-- SET MENU -->
+                <div class="menu-category" data-cat="setmenu">
+                    <h3 class="menu-category-title">SET MENU</h3>
+                    <div class="menu-list">
+                        <div class="menu-list-item">
+                            <span class="item-name">Chicken Rice Bowl</span>
+                            <span class="item-dots"></span>
+                            <span class="item-price">185 tk</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <span class="item-name">Set Menu 1 (Fried Rice, Vegetable, Chicken Fry, Salad)</span>
+                            <span class="item-dots"></span>
+                            <span class="item-price">235 tk</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <span class="item-name">Set Menu 2 (Fried Rice, Veg, Lemon Chicken Curry, Buffalo Wings 2
+                                Pcs, Salad)</span>
+                            <span class="item-dots"></span>
+                            <span class="item-price">325 tk</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <span class="item-name">Set Menu 3 (Fried Rice, Veg, Tandoori Chicken 1 Pcs, Lemon Chicken
+                                Curry, Salad, Water)</span>
+                            <span class="item-dots"></span>
+                            <span class="item-price">365 tk</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <span class="item-name">Set Menu 4 (Fried Rice, Mixed Veg, Thai Chicken 1 Pcs, Lemon Chicken
+                                Curry, Salad, Water)</span>
+                            <span class="item-dots"></span>
+                            <span class="item-price">330 tk</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <span class="item-name">Set Menu 5 (Fried Rice, Mixed Veg, Chicken Steak 1 Pcs, Chicken
+                                Nuggets 2 Pcs, Mushroom Chicken Curry, Salad, Water)</span>
+                            <span class="item-dots"></span>
+                            <span class="item-price">385 tk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FRIED ITEM -->
+                <div class="menu-category" data-cat="fried">
+                    <h3 class="menu-category-title">FRIED ITEM</h3>
+                    <div class="menu-list">
+                        <div class="menu-list-item"><span class="item-name">Crispy Fried Chicken 2pcs</span><span
+                                class="item-dots"></span><span class="item-price">210 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Thai Fried Chicken (8 Pcs Small)</span><span
+                                class="item-dots"></span><span class="item-price">320 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">BBQ Fried Chicken With Bone 2
+                                Pcs</span><span class="item-dots"></span><span class="item-price">190 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Tandoori With Bone 2 Pcs</span><span
+                                class="item-dots"></span><span class="item-price">199 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Bbq Wings 6 Pcs</span><span
+                                class="item-dots"></span><span class="item-price">289 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Wings Fry 6 Pcs</span><span
+                                class="item-dots"></span><span class="item-price">295 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Nuggets Small 8 Pcs</span><span
+                                class="item-dots"></span><span class="item-price">250 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Nuggets Loli Big 9 Pcs</span><span
+                                class="item-dots"></span><span class="item-price">399 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Dumpling (Momo 6 Pcs)</span><span
+                                class="item-dots"></span><span class="item-price">250 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Vegetable Dumpling (Momo 6 Pcs)</span><span
+                                class="item-dots"></span><span class="item-price">199 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Wonton 6 Pcs</span><span
+                                class="item-dots"></span><span class="item-price">230 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Wonton 9 Pcs</span><span
+                                class="item-dots"></span><span class="item-price">350 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">French Fry (1:1)</span><span
+                                class="item-dots"></span><span class="item-price">170 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Nachos</span><span
+                                class="item-dots"></span><span class="item-price">220 tk</span></div>
+                    </div>
+                </div>
+
+                <!-- BURGER ITEM -->
+                <div class="menu-category" data-cat="burger">
+                    <h3 class="menu-category-title">BURGER ITEM</h3>
+                    <div class="menu-list">
+                        <div class="menu-list-item"><span class="item-name">Chicken Grill Burger</span><span
+                                class="item-dots"></span><span class="item-price">190 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">BBQ Chicken Grill Burger</span><span
+                                class="item-dots"></span><span class="item-price">210 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Thrill mushroom Burger</span><span
+                                class="item-dots"></span><span class="item-price">310 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Mushroom Cheese Blast Burger</span><span
+                                class="item-dots"></span><span class="item-price">325 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Cheese Blast Burger</span><span
+                                class="item-dots"></span><span class="item-price">275 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">BBQ Chicken Supreme Burger</span><span
+                                class="item-dots"></span><span class="item-price">380 tk</span></div>
+                    </div>
+                </div>
+
+                <!-- OVEN BAKED PASTA & CHAWMIN -->
+                <div class="menu-category" data-cat="pasta">
+                    <h3 class="menu-category-title">PASTA & CHAWMIN</h3>
+                    <div class="menu-list">
+                        <div class="menu-list-item"><span class="item-name">Pasta Italiano</span><span
+                                class="item-dots"></span><span class="item-price">299 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Pasta Exitica</span><span
+                                class="item-dots"></span><span class="item-price">310 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Pasta Meditarina</span><span
+                                class="item-dots"></span><span class="item-price">335 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Pasta Ronaldo</span><span
+                                class="item-dots"></span><span class="item-price">335 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Pasta Europa</span><span
+                                class="item-dots"></span><span class="item-price">335 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Cheftime Special Pasta</span><span
+                                class="item-dots"></span><span class="item-price">350 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Egg Chawmin (1:3)</span><span
+                                class="item-dots"></span><span class="item-price">350 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Egg Vegetable Chawmin (1:3)</span><span
+                                class="item-dots"></span><span class="item-price">399 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Mixed Chawmin (1:3)</span><span
+                                class="item-dots"></span><span class="item-price">480 tk</span></div>
+                    </div>
+                </div>
+
+                <!-- PIZZA & SHAWARMA -->
+                <div class="menu-category" data-cat="pizza">
+                    <h3 class="menu-category-title">PIZZA & SHAWARMA</h3>
+                    <div class="menu-list">
+                        <div class="menu-list-item"><span class="item-name">Vegetable Shawarma</span><span
+                                class="item-dots"></span><span class="item-price">170 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Shawarma</span><span
+                                class="item-dots"></span><span class="item-price">180 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Beef Shawarma</span><span
+                                class="item-dots"></span><span class="item-price">199 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Tandoori Shawarma</span><span
+                                class="item-dots"></span><span class="item-price">210 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Mexican Hot Pizza (10")</span><span
+                                class="item-dots"></span><span class="item-price">650 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Fungi Lovers Pizza (10")</span><span
+                                class="item-dots"></span><span class="item-price">660 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Bolognese Pizza (10")</span><span
+                                class="item-dots"></span><span class="item-price">655 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">The Olivean Cheese (10")</span><span
+                                class="item-dots"></span><span class="item-price">670 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Khala Bhuna (Beef) Pizza (10")</span><span
+                                class="item-dots"></span><span class="item-price">689 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Naga Hot Pizza (10")</span><span
+                                class="item-dots"></span><span class="item-price">679 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Dhaka Pizza (10")</span><span
+                                class="item-dots"></span><span class="item-price">649 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Barcelona Pizza (10")</span><span
+                                class="item-dots"></span><span class="item-price">659 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chef Special Pizza (10")</span><span
+                                class="item-dots"></span><span class="item-price">699 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">BBQ Special Pizza (10")</span><span
+                                class="item-dots"></span><span class="item-price">699 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Sauces Carnival (10")</span><span
+                                class="item-dots"></span><span class="item-price">720 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Meat Lover Pizza (Chicken) (10")</span><span
+                                class="item-dots"></span><span class="item-price">750 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chef Supper Special Pizza (4 Flavour)
+                                (10")</span><span class="item-dots"></span><span class="item-price">779 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chef Special Pizza Loveria (10")</span><span
+                                class="item-dots"></span><span class="item-price">599 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Sandwich (10")</span><span
+                                class="item-dots"></span><span class="item-price">550 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chef Special Sandwich (10")</span><span
+                                class="item-dots"></span><span class="item-price">590 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Mixed Sandwich (10")</span><span
+                                class="item-dots"></span><span class="item-price">589 tk</span></div>
+                    </div>
+                </div>
+
+                <!-- SPECIAL COMBO & DISHES -->
+                <div class="menu-category" data-cat="combos">
+                    <h3 class="menu-category-title">SPECIAL COMBO & DISHES</h3>
+                    <div class="menu-list">
+                        <div class="menu-list-item"><span class="item-name">Sweet Couple Combo</span><span
+                                class="item-dots"></span><span class="item-price">690 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Family Special Combo</span><span
+                                class="item-dots"></span><span class="item-price">1799 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Fried Special Combo</span><span
+                                class="item-dots"></span><span class="item-price">720 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Egg Fried Rice(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">369 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Fried Rice(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">389 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Prawn Mixed Fried Rice(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">429 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Vegetable Wester(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">269 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Mixed Vegetable(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">305 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Hunan Chicken Curry(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">380 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Thai Lemon Chicken Curry(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">399 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Szechuan Prawn Curry(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">459 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Chili Onion Curry(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">399 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Thai Soup (1:1)</span><span
+                                class="item-dots"></span><span class="item-price">169 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Corn Soup(1:1)</span><span
+                                class="item-dots"></span><span class="item-price">149 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Thai Soup(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">399 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Chicken Corn Soup(1:3)</span><span
+                                class="item-dots"></span><span class="item-price">340 tk</span></div>
+                    </div>
+                </div>
+
+                <!-- DRINKS -->
+                <div class="menu-category" data-cat="drinks">
+                    <h3 class="menu-category-title">COFFEE & JUICE</h3>
+                    <div class="menu-list">
+                        <div class="menu-list-item"><span class="item-name">Special Hot Coffee</span><span
+                                class="item-dots"></span><span class="item-price">110 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Cold Coffee</span><span
+                                class="item-dots"></span><span class="item-price">155 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Milk Shake</span><span
+                                class="item-dots"></span><span class="item-price">160 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Oreo Shake</span><span
+                                class="item-dots"></span><span class="item-price">165 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Kitkat Shake</span><span
+                                class="item-dots"></span><span class="item-price">165 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Mango Juice</span><span
+                                class="item-dots"></span><span class="item-price">155 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Orange Juice</span><span
+                                class="item-dots"></span><span class="item-price">169 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Apple Juice</span><span
+                                class="item-dots"></span><span class="item-price">165 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Green Mango</span><span
+                                class="item-dots"></span><span class="item-price">149 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Papaya Juice</span><span
+                                class="item-dots"></span><span class="item-price">160 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Lemonade</span><span
+                                class="item-dots"></span><span class="item-price">110 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Mint Lemonade</span><span
+                                class="item-dots"></span><span class="item-price">120 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Mineral Water 500 ml</span><span
+                                class="item-dots"></span><span class="item-price">20 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Soft Drinks</span><span
+                                class="item-dots"></span><span class="item-price">25 tk</span></div>
+                        <div class="menu-list-item"><span class="item-name">Drinks Bullet</span><span
+                                class="item-dots"></span><span class="item-price">40 tk</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-red">কাস্টমার রিভিউ</h2>
+                <h3 class="section-subtitle">কেন তারা Chef Time কে পছন্দ করেন</h3>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span>★★★★★ (5/5)</span>
+                    </div>
+                    <p class="testimonial-text">"বিরিয়ানি খুবই সুস্বাদু হয়েছে, মসলার স্বাদ চমৎকার ছিল। রেস্টুরেন্টের
+                        পরিবেশটা দারুণ, আমরা সবাই খুব উপভোগ করেছি। সার্ভিসও ছিল খুব দ্রুত।"</p>
+                    <div class="testimonial-author">
+                        <strong>নাবিলা আক্তার</strong>
+                        <p>ময়মনসিংহ</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span>★★★★★ (5/5)</span>
+                    </div>
+                    <p class="testimonial-text">"Chef Time-এ বসে চিকেন ফ্রাই খাওয়ার মজাই আলাদা। ভেতরে নরম, বাইরে খাস্তা
+                        - একদম গরম গরম পরিবেশন করা হয়েছে। পরিবেশটা বেশ চমৎকার, বারবার আসতে ইচ্ছে করে।"</p>
+                    <div class="testimonial-author">
+                        <strong>তানভীর হাসান</strong>
+                        <p>মাসকান্দা</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span>★★★★★ (5/5)</span>
+                    </div>
+                    <p class="testimonial-text">"চাউমিন অসাধারণ, প্রতিটি আইটেম তাজা এবং সুস্বাদু। রেস্টুরেন্টের
+                        আতিথেয়তা এবং খাবারের মান নিশ্চিত সন্তুষ্টি দেয়। আবারো আসার ইচ্ছা রইলো।"</p>
+                    <div class="testimonial-author">
+                        <strong>আশিক মাহমুদ</strong>
+                        <p>শম্ভুগঞ্জ</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Google Reviews Widget -->
+            <div class="google-reviews-widget">
+                <div class="google-reviews-header">
+                    <div class="google-logo">
+                        <img src="images/google-logo.png" alt="Google Logo" style="height: 35px; width: auto;">
+                    </div>
+                    <div class="reviews-rating">
+                        <span class="rating-stars">★★★★★ ৪.৮</span>
+                        <span class="rating-count">(৩৫০+ রিভিউ)</span>
+                    </div>
+                </div>
+                <a href="https://google.com/search?q=Chef+Time+Mymensingh" target="_blank" class="btn btn-secondary"
+                    style="justify-content: center;">
+                    গুগলে আমাদের রিভিউ দেখুন
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-red">সচরাচর জিজ্ঞাসা</h2>
+                <h3 class="section-subtitle">আপনার মনে যা জানতে চান</h3>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>ডেলিভারি পেতে কতক্ষণ সময় লাগে?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>সাধারণত অর্ডার করার ৩০ থেকে ৪৫ মিনিটের মধ্যে ডেলিভারি দেওয়া হয়। ব্যস্ত সময়ে বা দূরে হলে
+                            সর্বোচ্চ ৬০ মিনিট পর্যন্ত লাগতে পারে।</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>কোন কোন পেমেন্ট পদ্ধতিতে অর্ডার করা যায়?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>আমরা নগদ অর্থ, বিকাশ, নগদ এবং ডেবিট/ক্রেডিট কার্ড গ্রহণ করি। ডেলিভারিতে ক্যাশ পেমেন্টে ৫%
+                            বিশেষ ছাড় পাবেন।</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>সর্বনিম্ন অর্ডার পরিমাণ কত?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ডেলিভারির জন্য সর্বনিম্ন অর্ডার ২৫০ টাকা। এর নিচে হলে শুধুমাত্র রেস্টুরেন্টে বসে খাওয়া
+                            সম্ভব।
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>অর্ডার ক্যান্সেল করা যাবে?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>অর্ডার প্রস্তুতি শুরু হওয়ার আগে ক্যান্সেল করা যায়। ডেলিভারি শুরু হলে ক্যান্সেল সম্ভব নয়।
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>কাস্টমাইজ করে অর্ডার দেওয়া যাবে?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>হ্যাঁ, অবশ্যই! মসলা কম বা বেশি, কোনো বিশেষ উপাদান বাদ দেওয়া বা যোগ করা — সব কিছু অর্ডার নোটে
+                            জানিয়ে দিন, আমরা চেষ্টা করব।</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>রেস্টুরেন্ট কখন খোলা থাকে?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>সকাল ১০টা থেকে রাত ১১টা পর্যন্ত খোলা থাকি। সপ্তাহে সাতদিন, কোনো ছুটি নেই। জরুরি যোগাযোগের
+                            জন্য ফোন বা হোয়াটসঅ্যাপ করুন: ০১৭১১ ৮৯৩ ২৩৯</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                                    fill="#D4501A" />
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h3>আমাদের অবস্থান</h3>
+                            <p>311, Maskanda<br>Polytechnical Mor<br>Mymensingh</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                                    fill="#D4501A" />
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h3>ফোন নম্বর</h3>
+                            <p>
+                                <a href="tel:01734940927" style="text-decoration:none; color:inherit;">01734
+                                    940927</a><br>
+                                <a href="tel:01725528688" style="text-decoration:none; color:inherit;">01725
+                                    528688</a><br>
+                                <a href="tel:01740557803" style="text-decoration:none; color:inherit;">01740
+                                    557803</a><br>
+                                <a href="tel:01712129691" style="text-decoration:none; color:inherit;">01712 129691</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+                                    fill="#D4501A" />
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h3>খোলার সময়</h3>
+                            <p>সকাল ১০টা - রাত ১১টা<br>সপ্তাহে সাতদিন খোলা</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-actions">
+                    <a href="https://wa.me/8801734940927?text=Hello, I would like to order" target="_blank"
+                        class="btn btn-whatsapp">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                                fill="currentColor" />
+                        </svg>
+                        হোয়াটসঅ্যাপে অর্ডার করুন
+                    </a>
+                    <button class="btn btn-primary" id="reserveTableBtn" onclick="openModal('reservationModal')">
+                        <svg class="icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path
+                                d="M21 4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H3V6h18v12zM4 8h4v2H4zm0 4h4v2H4zm6-4h10v2H10zm0 4h10v2H10z"
+                                fill="currentColor" />
+                        </svg>
+                        টেবিল বুক করুন
+                    </button>
+                    <div class="social-links-contact">
+                        <a href="https://facebook.com/ChefTime" target="_blank" class="social-link-item">
+                            <svg viewBox="0 0 24 24" width="28" height="28">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                                    fill="#1877F2" />
+                            </svg>
+                            <span>ChefTime</span>
+                        </a>
+                        <a href="tel:01734940927" class="social-link-item">
+                            <svg viewBox="0 0 24 24" width="28" height="28">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                                    fill="#25D366" />
+                            </svg>
+                            <span>01734 940927</span>
+                        </a>
+                        <a href="#" class="social-link-item">
+                            <svg viewBox="0 0 24 24" width="28" height="28">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                                    fill="#FF0000" />
+                            </svg>
+                            <span>@ChefTime</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.6720587199165!2d90.40493337600091!3d24.7381364780094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564f28b10178c3%3A0xb7f7768cf750b3ab!2sChef%20Time%20Restaurant!5e0!3m2!1sen!2sbd!4v1776628789657!5m2!1sen!2sbd"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p style="margin-top:8px; font-size:0.85rem; color:#666;">📍 <a
+                        href="https://www.google.com/maps/search/Chef+Time+Restaurant+Mymensingh" target="_blank"
+                        style="color: var(--primary-red);">Google Maps এ দেখুন</a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Reservation Modal -->
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>টেবিল রিজার্ভেশন</h2>
+            <form id="reservationForm" onsubmit="submitReservation(event)">
+                <input type="text" placeholder="আপনার নাম" required>
+                <input type="tel" placeholder="ফোন নং ." required>
+                <input type="date" required>
+                <select id="resTime" required>
+                    <option value="">সময় নির্বাচন করুন</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="10:30 AM">10:30 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="11:30 AM">11:30 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="12:30 PM">12:30 PM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="01:30 PM">01:30 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="02:30 PM">02:30 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                    <option value="03:30 PM">03:30 PM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                    <option value="04:30 PM">04:30 PM</option>
+                    <option value="05:00 PM">05:00 PM</option>
+                    <option value="05:30 PM">05:30 PM</option>
+                    <option value="06:00 PM">06:00 PM</option>
+                    <option value="06:30 PM">06:30 PM</option>
+                    <option value="07:00 PM">07:00 PM</option>
+                    <option value="07:30 PM">07:30 PM</option>
+                    <option value="08:00 PM">08:00 PM</option>
+                    <option value="08:30 PM">08:30 PM</option>
+                    <option value="09:00 PM">09:00 PM</option>
+                    <option value="09:30 PM">09:30 PM</option>
+                    <option value="10:00 PM">10:00 PM</option>
+                    <option value="10:30 PM">10:30 PM</option>
+                </select>
+                <select required>
+                    <option value="">অতিথি সংখ্যা</option>
+                    <option value="1">১ জন</option>
+                    <option value="2">২ জন</option>
+                    <option value="3">৩ জন</option>
+                    <option value="4">৪ জন</option>
+                    <option value="5">৫ জন</option>
+                    <option value="6+">৬+ জন</option>
+                </select>
+                <textarea placeholder="বিশেষ অনুরোধ" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary full-width">বুকিং নিশ্চিত করুন</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div id="quickViewModal" class="modal">
+        <div class="modal-content modal-wide">
+            <span class="close">&times;</span>
+            <div class="quickview-container">
+                <div class="quickview-image">
+                    <img id="qvImage" src="" alt="খাবার" />
+                </div>
+                <div class="quickview-details">
+                    <h2 id="qvName"></h2>
+                    <div class="qv-rating">
+                        <span id="qvRating">★★★★★</span>
+                        <span id="qvReviews">(১৫০+ রিভিউ)</span>
+                    </div>
+                    <p class="qv-price" id="qvPrice"></p>
+
+                    <div class="qv-info">
+                        <h4>বৈশিষ্ট্য:</h4>
+                        <ul id="qvFeatures">
+                            <li>✓ তাজা উপাদান</li>
+                            <li>✦ সুগন্ধি মসলা</li>
+                            <li>▶ দ্রুত ডেলিভারি</li>
+                        </ul>
+                    </div>
+
+                    <div class="qv-description" id="qvDescription"></div>
+
+                    <div class="qv-quantity">
+                        <label>পরিমাণ:</label>
+                        <div class="quantity-control">
+                            <button class="qty-btn" onclick="updateQvQuantity(-1)">−</button>
+                            <span id="qvQuantity">1</span>
+                            <button class="qty-btn" onclick="updateQvQuantity(1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="qv-special-request">
+                        <label>বিশেষ অনুরোধ (ঐচ্ছিক):</label>
+                        <textarea id="qvSpecialNote" placeholder="যেমন: কম মসলা, অতিরিক্ত আলু, ইত্যাদি"
+                            rows="2"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary full-width" onclick="orderViaWhatsApp()">
+                        <svg class="icon" viewBox="0 0 24 24" width="20" height="20" style="margin-right: 8px;">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12c0 2.17.61 4.19 1.68 5.91L2 22l4.22-1.35C7.86 21.41 9.86 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.93 0-3.73-.55-5.26-1.5l-.38-.23-2.5.8.8-2.43-.26-.41C3.54 14.86 3 13.48 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9-4.03 9-9 9zm4.75-6.75c-.26-.13-1.53-.75-1.77-.84-.23-.09-.4-.13-.57.13-.17.26-.66.84-.8 1-.14.16-.28.18-.54.05-.26-.13-1.1-.41-2.09-1.29-.77-.69-1.3-1.54-1.45-1.8-.15-.26-.02-.4.11-.53.12-.11.26-.3.39-.45.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.2-.5-.41-.43-.57-.44h-.48c-.17 0-.44.06-.67.3-.23.24-.88.86-.88 2.1s.9 2.43 1.03 2.6c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.53-.62 1.75-1.23.21-.61.21-1.13.15-1.23-.07-.1-.23-.16-.5-.3z"
+                                fill="currentColor" />
+                        </svg>
+                        হোয়াটসঅ্যাপে অর্ডার করুন
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Chef Time</h4>
+                    <p>good food, good mood. <br>Located in Maskanda, Mymensingh.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>মেনু ও লিংক</h4>
+                    <ul>
+                        <li><a href="#bestsellers">আমাদের মেনু</a></li>
+                        <li><a href="#gallery">ছবি</a></li>
+                        <li><a href="#about">আমাদের পরিচয়</a></li>
+                        <li><a href="#contact">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>আমাদেরকে ফলো করুন</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chef Time. All Rights Reserved.</p>
+                <a href="https://rabyweb.com" target="_blank" class="made-by">
+                    <span>Made by Rabyweb</span>
+                    <img src="images/footer-logo.png" alt="Rabyweb Logo" class="footer-credit-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
